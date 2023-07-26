@@ -20,8 +20,13 @@ export default function Welcome() {
                 <Beer className={c.greeting} />
                 恭喜你跑起来了
             </h1>
-            <p>修改 <code>src/modules/Welcome/index.tsx</code> 并保存，这个页面会实时更新</p>
-            <p>在开始开发前，请确保你阅读了 <CookBookLink />，如有任何问题，可通过如流搜索 1508631 加入群聊。</p>
+            <p>
+                修改 <code>src/modules/Welcome/index.tsx</code> 并保存，这个页面会实时更新
+            </p>
+            <p>
+                在开始开发前，请确保你阅读了 <CookBookLink />
+                ，如有任何问题，可通过如流搜索 1508631 加入群聊。
+            </p>
         </div>
     );
 }

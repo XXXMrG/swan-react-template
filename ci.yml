@@ -1,5 +1,6 @@
 Global:
   version: 2.0
+  group_email: efe-blue@baidu.com
 
 Default:
   profile: [build]
@@ -9,17 +10,18 @@ Profiles:
     name: build
     mode: AGENT
     environment:
-      image: DECK_CENTOS7U5_K3
+      image: DECK_STD_CENTOS7
       tools:
-        - nodejs: 18.3.0
+        - nodejs: 18.latest
+        - pnpm: 8.3.1
     check:
       - reuse: TASK
         enable: true
     build:
-      command: sh scripts/build.sh --build-target=$BUILD_TARGET --cache-dir=build-cache/webpack
-    cache:
-      enable: true
-      paths:
-        - build-cache
+      command: sh scripts/build.sh
+      cache:
+        enable: true
+        paths:
+          - ~/.pnpm-store/
     artifacts:
       release: true

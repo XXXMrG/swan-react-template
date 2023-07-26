@@ -5,7 +5,7 @@
     "scripts": {
         "start": "skr dev",
         "build": "skr build --clean",
-        "lint": "skr lint --strict",
+        "lint": "prettier --write . && skr lint --strict",
         "lint-staged": "npm run lint -- --staged",
         "postinstall": "husky install"
     },
@@ -18,22 +18,27 @@
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-router-dom": "^6.3.0"
+        "react-router-dom": "^6.14.2"
+    },
+    "engines": {
+        "node": ">=18",
+        "pnpm": ">=8"
     },
     "devDependencies": {
-        "@reskript/cli": "5.4.0",
-        "@reskript/cli-build": "5.4.0",
-        "@reskript/cli-dev": "5.4.0",
-        "@reskript/cli-lint": "5.4.0",
-        "@reskript/config-lint": "5.4.0",
-        "@reskript/settings": "5.4.0",
-        "@types/react": "^18.0.15",
-        "@types/react-dom": "^18.0.6",
-        "core-js": "^3.23.4",
-        "eslint": "^8.19.0",
-        "husky": "^8.0.1",
-        "stylelint": "^14.9.1",
-        "typescript": "^4.7.4",
-        "vite": "^2.9.14"
+        "@reskript/cli": "6.0.0",
+        "@reskript/cli-build": "6.0.0",
+        "@reskript/cli-dev": "6.0.0",
+        "@reskript/cli-lint": "6.0.0",
+        "@reskript/config-lint": "6.0.0",
+        "@reskript/settings": "6.0.0",
+        "@types/react": "^18.2.16",
+        "@types/react-dom": "^18.2.7",
+        "core-js": "^3.31.1",
+        "eslint": "^8.45.0",
+        "prettier": "^3.0.0",
+        "husky": "^8.0.3",
+        "stylelint": "^15.10.2",
+        "typescript": "^5.1.6",
+        "vite": "^4.4.7"
     }
 }

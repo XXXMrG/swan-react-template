@@ -3,10 +3,7 @@
         "module": "esnext",
         "target": "esnext",
         "noEmit": true,
-        "lib": [
-          "esnext",
-          "dom"
-        ],
+        "lib": ["esnext", "dom"],
         "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
@@ -23,8 +20,5 @@
         "noFallthroughCasesInSwitch": true,
         "noUnusedLocals": true
     },
-    "include": [
-        "src",
-        "*.ts"
-    ]
+    "include": ["src", "*.ts"]
 }
