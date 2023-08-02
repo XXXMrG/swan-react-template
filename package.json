@@ -9,11 +9,7 @@
         "lint-staged": "npm run lint -- --staged",
         "postinstall": "husky install"
     },
-    "repository": {
-        "type": "git",
-        "url": "ssh://gaojian17@icode.baidu.com:8235/baidu/personal-code/swan-react-template"
-    },
-    "author": "gaojian17",
+    "author": "Keith",
     "license": "UNLICENSED",
     "dependencies": {
         "react": "^18.2.0",
